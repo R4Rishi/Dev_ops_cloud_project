@@ -1,0 +1,99 @@
+swagger: "2.0"
+info:
+  title: Ecommerce API
+  description: API for e-commerce platform
+  version: 1.0.0
+host: ecommerce-api.execute-api.us-east-1.amazonaws.com
+basePath: /
+schemes:
+- https
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /products/{productId}:
+    get:
+      summary: Get product details
+      description: Get product details by product ID
+      parameters:
+      - in: path
+        name: productId
+        description: Product ID
+        required: true
+        type: string
+      responses:
+        200:
+          description: Product details
+          schema:
+            $ref: '#/definitions/Product'
+        404:
+          description: Product not found
+  /orders:
+    post:
+      summary: Create order
+      description: Create a new order
+      parameters:
+      - in: body
+        name: order
+        description: Order details
+        required: true
+        schema:
+          type: object
+          properties:
+            customer:
+              type: string
+            products:
+              type: array
+              items:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  quantity:
+                    type: integer
+      responses:
+        201:
+          description: Order created
+        400:
+          description: Invalid order structure
+    get:
+      summary: Get orders
+      description: Get all orders
+      responses:
+        200:
+          description: Orders
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Order'
+definitions:
+  Product:
+    type: object
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      price:
+        type: number
+  Order:
+    type: object
+    properties:
+      id:
+        type: string
+      customer:
+        type: string
+      products:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: string
+            quantity:
+              type: integer
+  Orders:
+    type: array
+    items:
+      $ref: '#/definitions/Order'
