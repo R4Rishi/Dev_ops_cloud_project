@@ -30,9 +30,9 @@ To run this project locally or in the cloud, follow these steps:
 
 Clone the repository:
 
-'''bash
+```bash
 https://github.com/R4Rishi/Dev_ops_cloud_project/tree/main/Cloud_Automation
-cd cloud-automation-project
+cd Cloud-Automation
 Install Terraform:
 
 # Instructions for installing Terraform based on your OS
