@@ -33,8 +33,8 @@ Clone the repository:
 ```bash
 https://github.com/R4Rishi/Dev_ops_cloud_project/tree/main/Cloud_Automation
 cd Cloud-Automation
-Install Terraform:
 
+Install Terraform:
 # Instructions for installing Terraform based on your OS
 ## Initialize Terraform:
 
