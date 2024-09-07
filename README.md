@@ -30,7 +30,7 @@ To run this project locally or in the cloud, follow these steps:
 
 Clone the repository:
 
-```bash
+ ```bash
 git clone https://github.com/R4Rishi/Dev_ops_cloud_project/tree/main/Cloud_Automation
 cd Cloud-Automation
 
