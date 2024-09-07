@@ -30,7 +30,8 @@ To run this project locally or in the cloud, follow these steps:
 
 Clone the repository:
 
-git clone https://github.com/YourUsername/cloud-automation-project
+'''bash
+https://github.com/R4Rishi/Dev_ops_cloud_project/tree/main/Cloud_Automation
 cd cloud-automation-project
 Install Terraform:
 
@@ -47,11 +48,12 @@ This project implements a robust backup and recovery solution in the cloud. It i
 - Automated Backups: Scheduled backups of critical data stored in S3.
 - Disaster Recovery: Strategies to restore data quickly in case of service outages or data loss.
 - Cost Management: Utilized lifecycle policies in S3 to manage storage costs effectively.
-- 
+
 ## Usage
-Configure backup schedules through Terraform scripts.
-Monitor backup status via AWS CloudWatch.
-Serverless E-commerce Website
+- Configure backup schedules through Terraform scripts.
+- Monitor backup status via AWS CloudWatch.
+
+## Serverless E-commerce Website
 This project is a fully functional e-commerce website built using serverless architecture. Key components include:
 
 - Frontend: Developed using HTML, CSS, and JavaScript for a responsive user experience.
@@ -67,7 +69,7 @@ Deploy the backend services using:
 # Instructions for deploying AWS Lambda functions and setting up DynamoDB
 Host the frontend in S3:
 
-aws s3 sync ./frontend s3://your-bucket-name
+aws s3 sync ./frontend s3://bucket-name
 ## Contributing
 Contributions are welcome! If you would like to contribute to these projects, please follow these steps:
 
