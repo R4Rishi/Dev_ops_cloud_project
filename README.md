@@ -60,9 +60,10 @@ This project is a fully functional e-commerce website built using serverless arc
 ## Installation
 Clone the repository:
 
-git clone https://github.com/YourUsername/serverless-ecommerce
-cd serverless-ecommerce
-Deploy the backend services using:
+- git clone https://github.com/R4Rishi/Dev_ops_cloud_project/tree/main/Serverless_e-commerce_project_using_Lambda_S3_and_dynamoDB
+- cd serverless-ecommerce
+
+## Deploy the backend services using:
 
 # Instructions for deploying AWS Lambda functions and setting up DynamoDB
 Host the frontend in S3:
